@@ -167,3 +167,27 @@ The steps to setup babel in the project.
 2. install the required loaders and babel package<br>
 `npm install @babel/core babel-loader @babel/preset-env babel-plugin-transform-class-properties --save-dev`
 
+> #### Congratulations you can start work with the download of the commit #7
+
+## commit #8 - Adding minification plugin to the webpack result
+In this commit we will install a plugin to make this work
+> To add plugin array to the project you need to add 'plugins' to the webpack.config.js
+```javascript
+ mode: 'none',
+    plugins: [],
+```
+
+So now you can set the plugin in a few steps:
+> Add it to the plugins array
+```javascript
+ plugins: [
+        new TerserPlugin()
+    ],
+```
+> Import the plugin in the top of the file
+```javascript
+const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
+``` 
+> Install the plugin
+`npm install terser-webpack-plugin --save-dev`
