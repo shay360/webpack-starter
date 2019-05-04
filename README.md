@@ -30,3 +30,8 @@ For installing the webpack you ned to install 2 things
 2. webpack-cli<br>
  ** Use the --save-dev command**<br>
 `npm install webpack webpack-cli --save-dev`
+
+## commit #4 - Add webpack configuration file
+Add new file to the project folder called webpack.config.js<br>
+This is the default name oof file that webpack will search for.<br>
+In this file you need to write all you configuration include the rules of webpack.
