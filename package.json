@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/shay360/webpack-starter#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
   },

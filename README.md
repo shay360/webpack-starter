@@ -147,5 +147,23 @@ The use array in webpack will be read from right to left so in the scss example 
 `npm install style-loader css-loader sass-loader node-sass --save`
 ###### use --save and not --save-dev
 
+## commit #7 - Add Babel to the project
 
+The steps to setup babel in the project.
+1. write a new rule to handel js files in webpack.config.js, the rule will include the preset and all configurations for babel
+```javascript
+{
+    test: /\.js$/,
+    exclude: /node_modules/,
+    use: {
+        loader: 'babel-loader',
+        options: {
+            presets: ['@babel/env'],
+            plugins: ['transform-class-properties']
+        }
+    }
+}
+```
+2. install the required loaders and babel package<br>
+`npm install @babel/core babel-loader @babel/preset-env babel-plugin-transform-class-properties --save-dev`
 
