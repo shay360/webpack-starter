@@ -97,3 +97,55 @@ In this file all we need to to is to import the bundle.js
 ```
 ##### Now you can run `npx webview` and check if there are no errors and bundle.js is built
 
+
+## commit #6 - Add loader for css and scss
+In this commit we are adding loaders to work with css and scss.<br>
+The basic steps are:
+1. npm install the loader
+2. set the rule for using the loader in webpack.config.js<br>
+:bowtie: rule is an object inside rules Array
+```javascript
+mode: 'none',
+    module: {
+        rules: [
+            {
+                // This is a rule object
+            }
+        ]
+    }
+```
+> So how we writing the rule for css and scss
+
+I want to tell him to use the loaders on any .css file
+```javascript
+rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader', 'css-loader'
+                ]
+            }
+        ]
+```
+> Now lets write rule for scss
+
+I want to tell him to use the loaders on any .scss file
+```javascript
+{
+    test: /\.scss$/,
+    use: [
+        'style-loader', 'css-loader', 'sass-loader'
+    ]
+}
+```
+
+##### A little word on use Array:
+The use array in webpack will be read from right to left so in the scss example it will first use `sass-loader`
+
+
+### After we set the rules for the css and scss it's time to install them thru npm
+`npm install style-loader css-loader sass-loader node-sass --save`
+###### use --save and not --save-dev
+
+
+
