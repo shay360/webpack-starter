@@ -15,3 +15,8 @@
 .README.md
 
 
+## commit #2 - Add NPM package.json
+`npm init`
+You can use `npm init -y` to make it quick and skip questions
+
+

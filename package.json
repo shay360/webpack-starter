@@ -1,0 +1,20 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "* ./dist/\r * ./dist/index.html\r * ./src/\r * ./src/index.js\r * ./src/components/\r * ./src/components/hello-world-component/\r * ./src/components/hello-world-component/hello-world-component.js\r * ./src/components/hello-world-component/hello-world-component.scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shay360/webpack-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shay360/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/shay360/webpack-starter#readme"
+}
