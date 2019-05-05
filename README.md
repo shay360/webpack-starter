@@ -191,3 +191,19 @@ const TerserPlugin = require('terser-webpack-plugin');
 ``` 
 > Install the plugin
 `npm install terser-webpack-plugin --save-dev`
+
+## commit #9 - Adding jQuery to the project
+For adding jQuery you need to run<br>
+`npm install jquery`
+The you can import him to the project thru the index.js<br>
+> You have two options to import it.
+
+#### The babel way (ES6)
+import $ from "jquery";
+
+#### The webpack way
+var $ = require("jquery");
+
+
+
+
