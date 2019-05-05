@@ -204,6 +204,23 @@ import $ from "jquery";
 #### The webpack way
 var $ = require("jquery");
 
+## commit #10 - Adding Bootstrap to the project
+Now we will add bootstrap to the project and import him.<br>
+`npm install bootstrap` will install the npm package of bootstrap <br>
+Now you need to install proper.js and if you dont have jquery installed so install it now see commit #9
+`npm install popper.js --save`<br>
+Now you can start do some imports in the index.js
+```javascript
+import $ from "jquery";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+```
+
+
+
+
+
 
 
 
