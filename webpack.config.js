@@ -6,6 +6,7 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'dist')
     },
+    performance: { hints: false },
     mode: 'none',
     plugins: [
         new TerserPlugin()
