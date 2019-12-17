@@ -97,6 +97,16 @@ In this file all we need to to is to import the bundle.js
 ```
 ##### Now you can run `npx webview` and check if there are no errors and bundle.js is built
 
+### To work with multiple pages and bundles change the output to:
+```javacsript
+ entry: {
+        index: './src/index.js',
+    },
+    output: {
+        filename: "[name].bundle.js",
+        path: path.resolve(__dirname, 'www/dist')
+    },
+```
 
 ## commit #6 - Add loader for css and scss
 In this commit we are adding loaders to work with css and scss.<br>
