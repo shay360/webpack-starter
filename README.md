@@ -101,6 +101,8 @@ In this file all we need to to is to import the bundle.js
 ```javacsript
  entry: {
         index: './src/index.js',
+        about: './src/about.js',
+        contact: './src/contact.js'
     },
     output: {
         filename: "[name].bundle.js",
