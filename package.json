@@ -4,7 +4,7 @@
   "description": "* ./dist/\r * ./dist/index.html\r * ./src/\r * ./src/index.js\r * ./src/components/\r * ./src/components/hello-world-component/\r * ./src/components/hello-world-component/hello-world-component.js\r * ./src/components/hello-world-component/hello-world-component.scss",
   "main": "index.js",
   "scripts": {
-    "build": "npx webview -w"
+    "build": "npx webpack -w"
   },
   "repository": {
     "type": "git",
