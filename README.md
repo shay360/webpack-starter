@@ -1,4 +1,4 @@
-# webpack-starter
+# webpack-starter-babel
 ## commit #1 - Add basic files and directories
 ### Basic Project Files
 * ./dist/
