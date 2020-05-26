@@ -30,7 +30,7 @@
     "bootstrap": "^4.4.1",
     "css-loader": "^2.1.1",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1"
